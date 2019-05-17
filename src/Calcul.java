@@ -1,12 +1,12 @@
 public class Calcul {
 
-    private LigneCommande lc;
+    public void calculer(double a, double b, Character character) {
+        // TODO ici instancie objet calcultricconf pour apeller lafonction getoperation,
+        CalculatorConfig cf = new CalculatorConfig();
 
-    public boolean isAddition(LigneCommande lc){
-        return (lc.getOperateur() == '+');
+        Operation operation = cf.getOperation(character);
+
+        double res = operation.executer(a,b);
     }
 
-    public boolean isDivision(LigneCommande lc){
-        return (lc.getOperateur() == '/');
-    }
 }
