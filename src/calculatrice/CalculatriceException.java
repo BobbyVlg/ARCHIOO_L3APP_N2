@@ -1,3 +1,5 @@
+package calculatrice;
+
 public class CalculatriceException extends Exception{
     private int code;
     private String defaultMessage;

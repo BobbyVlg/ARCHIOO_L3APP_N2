@@ -1,3 +1,5 @@
+package calculatrice;
+
 import java.util.HashMap;
 
 public class CalculatorConfig {

@@ -1,3 +1,5 @@
+package calculatrice;
+
 public class Calcul {
 
     public void calculer(double a, double b, Character character) {

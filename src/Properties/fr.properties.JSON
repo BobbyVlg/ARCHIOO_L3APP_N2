@@ -1,0 +1,5 @@
+{
+  "FIRST_DIGIT" : "Entrez la première valeur: ",
+  "SECOND_DIGIT": "Entrez la seconde valeur: ",
+  "THIRD_DIGIT": "choisissez un operateur: 1 pour adiitionner | 2 pour diviser "
+}
