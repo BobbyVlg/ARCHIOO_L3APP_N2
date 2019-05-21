@@ -1,5 +1,5 @@
 {
-  "FIRST_DIGIT": "Enter your value: ",
+  "FIRST_DIGIT": "Enter your first value: ",
   "SECOND_DIGIT": "Enter your second value: ",
   "THIRD_DIGIT": "Choose an operator: 1 for add | 2 for divide "
 }

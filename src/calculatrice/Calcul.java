@@ -2,13 +2,10 @@ package calculatrice;
 
 public class Calcul {
 
-    public void calculer(double a, double b, Character character) {
-        // TODO ici instancie objet calcultricconf pour apeller lafonction getoperation,
-        CalculatorConfig cf = new CalculatorConfig();
+    public double calculer(double a, double b, char character) {
+        Operation operation = CalculatorConfig.getOperation(character);
 
-        Operation operation = cf.getOperation(character);
-
-        double res = operation.executer(a,b);
+        return operation.executer(a,b);
     }
 
 }

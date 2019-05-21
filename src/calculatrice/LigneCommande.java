@@ -21,7 +21,6 @@ public class LigneCommande implements IHM {
         a = sc.nextDouble();
         System.out.print(mp.readProperties("SECOND_DIGIT"));
         b = sc.nextDouble();
-        // TODO change charAt
         System.out.print(mp.readProperties("THIRD_DIGIT"));
         int choix;
         choix = sc.nextInt();
@@ -33,14 +32,15 @@ public class LigneCommande implements IHM {
             if (choix == 2) {
                 operateur = '/';
             }
+            Calcul calcul = new Calcul();
+            calcul.calculer(a,b,operateur);
         } catch (CalculatriceException e) {
             System.out.println(ListException.WRONG_SIGN.getMessage());
         }
 
     }
-
     private void exceptionOperateur(int choix) throws CalculatriceException {
-        if (choix != 1 || choix != 2) {
+        if (choix != 1 && choix != 2) {
             throw new CalculatriceException(ListException.WRONG_SIGN.getCode(), ListException.WRONG_SIGN.getMessage());
         }
     }
