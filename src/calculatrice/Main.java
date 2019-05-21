@@ -9,8 +9,9 @@ public class Main {
         LigneCommande ligneCommande = new LigneCommande();
         CalculatorConfig calculatorConfig = new CalculatorConfig();
 
-        ligneCommande.lancer();
         calculatorConfig.init();
+        ligneCommande.lancer();
+
 
     }
 }

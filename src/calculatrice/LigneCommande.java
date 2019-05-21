@@ -33,7 +33,7 @@ public class LigneCommande implements IHM {
                 operateur = '/';
             }
             Calcul calcul = new Calcul();
-            calcul.calculer(a,b,operateur);
+            System.out.println(calcul.calculer(a,b,operateur));
         } catch (CalculatriceException e) {
             System.out.println(ListException.WRONG_SIGN.getMessage());
         }
